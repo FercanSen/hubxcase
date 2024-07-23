@@ -1,0 +1,57 @@
+.slider-menu-item {
+  width: 301px;
+  height: 124px;
+
+  border: 1px solid transparent;
+  border-right: 1px solid rgb(102, 102, 102, 0.08);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider-menu-item:last-child {
+  border-right: none;
+}
+
+.slider-menu-item.active {
+  background-color: rgb(3, 129, 255, 0.08);
+}
+.slider-menu-item:hover {
+  border: 1px solid #0381ff;
+}
+
+.slider-menu-item__icon {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+
+  border: 1px solid rgb(102, 102, 102, 0.08);
+  border-radius: 50%;
+  // todo: This border is a temporary solution. We should handle the icon border with svg's stroke property
+}
+
+.icon-circle {
+  // stroke: black;
+  // stroke-opacity: 0.08;
+
+  transition:
+    stroke-dashoffset 1s ease-in-out,
+    stroke 1s ease-in-out,
+    stroke-opacity 1s ease-in-out;
+
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+}
+
+.slider-menu-item.active .icon-circle {
+  stroke-dashoffset: 0;
+  stroke: #0381ff;
+  fill: white;
+
+  // stroke-opacity: 1;
+}

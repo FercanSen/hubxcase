@@ -1,12 +1,14 @@
 import styles from './App.module.css';
+import SliderMenu from './components/SliderMenu/SliderMenu';
 
 export function App() {
-  // This is a test to check git
   return (
     <>
       <header>
         <h1>HubX Frontend Assignment</h1>
       </header>
+
+      <SliderMenu />
 
       <main className={styles.main}></main>
     </>
