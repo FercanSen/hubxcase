@@ -3,12 +3,12 @@ import './SliderMenuItem.scss';
 
 interface SliderMenuItemProps {
   IconComponent: FC<{ color?: string }>;
-  text: string;
+  itemTitle: string;
   isActive: boolean;
   onClick: () => void;
 }
 
-const SliderMenuItem: FC<SliderMenuItemProps> = ({ IconComponent, text, isActive, onClick }) => {
+const SliderMenuItem: FC<SliderMenuItemProps> = ({ IconComponent, itemTitle, isActive, onClick }) => {
   return (
     <div
       className={`slider-menu-item ${isActive ? 'active' : ''}`}
@@ -17,7 +17,7 @@ const SliderMenuItem: FC<SliderMenuItemProps> = ({ IconComponent, text, isActive
       <div className="slider-menu-item__icon">
         {IconComponent && <IconComponent color={isActive ? '#0381FF' : '#666666'} />}
       </div>
-      {text}
+      {itemTitle}
     </div>
   );
 }
