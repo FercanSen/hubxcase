@@ -5,4 +5,14 @@
 .slider-menu-items {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .react-horizontal-scrolling-menu--scroll-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
