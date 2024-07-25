@@ -1,40 +1,36 @@
 @import '../animations';
 
-.page-content__image--sign-and-stamp {
+.sign-and-stamp {
   transform: translateY(100%);
   animation: popUp 1s ease-out forwards;
 }
 
-.page-content__image--sign-and-stamp--overlay {
+.page-content__image {
+  position: relative;
+}
+
+.sign-and-stamp--overlay {
   position: absolute;
   animation: fadeIn 0.5s ease-out forwards;
   opacity: 0;
+
+  &.sign {
+    bottom: 83px;
+    right: 60px;
+    animation-delay: 1s;
+  }
+
+  &.stamp {
+    bottom: 155px;
+    left: 50px;
+    animation-delay: 1.25s;
+  }
 }
 
-.page-content__image--sign-and-stamp--overlay.sign {
-  position: relative;
-  bottom: 83px;
-  right: 60px;
-  animation-delay: 1s;
+@media (max-width: 768px) {
+  .sign-and-stamp--overlay.sign,
+  .sign-and-stamp--overlay.stamp {
+    transform: scale(0.7);
+    // transform-origin: bottom center;
+  }
 }
-
-.page-content__image--sign-and-stamp--overlay.stamp {
-  position: relative;
-  bottom: 155px;
-  left: 50px;
-  animation-delay: 1.25s;
-}
-
-// todo: solve the overlay changing height issue
-// // For desktop
-// @media (min-width: 768px) {
-//   .page-content__image--sign-and-stamp--overlay.sign {
-//     bottom: 83px;
-//     right: 60px;
-//   }
-
-//   .page-content__image--sign-and-stamp--overlay.stamp {
-//     bottom: 155px;
-//     left: 50px;
-//   }
-// }
