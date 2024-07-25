@@ -1,0 +1,29 @@
+@import '../animations';
+
+.advanced-filters__frame {
+  transform: translateY(100%);
+  animation: popUp 1s ease-out forwards;
+}
+
+.page-content__image {
+  position: relative;
+}
+
+.advanced-filters {
+  position: absolute;
+  bottom: 5px;
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+
+  &.filter1 {
+    position: relative;
+    right: 167px;
+    animation-delay: 1s;
+  }
+
+  &.filter2 {
+    position: relative;
+    left: 167px;
+    animation-delay: 1.25s;
+  }
+}

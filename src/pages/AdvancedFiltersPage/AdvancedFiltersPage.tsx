@@ -1,4 +1,5 @@
 import '../PageContent.scss';
+import './AdvancedFilters.scss';
 
 function AdvancedFiltersPage() {
   return (
@@ -14,7 +15,25 @@ function AdvancedFiltersPage() {
           </p>
           <button>Learn More</button>
         </div>
-        <div className="page-content__image">image-content</div>
+        <div className="page-content__image">
+          <img
+            className="advanced-filters__frame"
+            src="src/images/AdvancedFilters/AdvancedFiltersFrame.png"
+            alt="Advanced Filters"
+          />
+          <div className="advanced-filters">
+            <img
+              className="advanced-filters filter1"
+              src="src/images/AdvancedFilters/Filter1.png"
+              alt="Filter Example 1"
+            />
+            <img
+              className="advanced-filters filter2"
+              src="src/images/AdvancedFilters/Filter2.png"
+              alt="Filter Example 2"
+            />
+          </div>
+        </div>
       </div>
     </>
   );
