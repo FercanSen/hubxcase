@@ -15,18 +15,18 @@ function SignAndStampPage() {
       </div>
       <div className="page-content__image">
         <img
-          className="page-content__image--signAndStamp"
+          className="page-content__image--sign-and-stamp"
           src="src/images/SignAndStamp/SignAndStamp.png"
           alt="Sign & Stamp"
         />
-        <div className="page-content__image--signAndStamp--overlay">
+        <div className="page-content__image--sign-and-stamp--overlay">
           <img
-            className="page-content__image--signAndStamp--overlay sign"
+            className="page-content__image--sign-and-stamp--overlay sign"
             src="src/images/SignAndStamp/Sign.png"
             alt="Sign"
           />
           <img
-            className="page-content__image--signAndStamp--overlay stamp"
+            className="page-content__image--sign-and-stamp--overlay stamp"
             src="src/images/SignAndStamp/Stamp.png"
             alt="Stamp"
           />
