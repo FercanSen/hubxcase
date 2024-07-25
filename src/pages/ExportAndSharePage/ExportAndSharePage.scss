@@ -5,15 +5,18 @@
   animation: popUp 1s ease-out forwards;
 }
 
-.page-content__image {
-  position: relative;
-}
-
 .file-formats {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.jpg,
+.pdf,
+.txt,
+.arrow {
+  position: relative;
 }
 
 .arrow {
@@ -34,58 +37,6 @@
 .txt {
   animation-delay: 1.45s;
 }
-
-// !!---
-
-.jpg,
-.pdf,
-.txt,
-.arrow {
-  position: relative;
-  //   transform-origin: bottom center;
-  //   transform: translateY(100%) scale(0.5) rotate(-30deg);
-  //   animation: popUpCurve 1s ease-out forwards;
-}
-
-// @keyframes popUpCurve {
-//   0% {
-//     transform: translateX(100%) translateY(100%) scale(0) rotate(-30deg);
-//   }
-//   50% {
-//     transform: translateX(-10%) translateY(-10%) scale(1) rotate(15deg);
-//   }
-//   100% {
-//     transform: translateX(0) translateY(0) scale(1) rotate(0);
-//   }
-// }
-
-// ------
-// .jpg,
-// .pdf,
-// .txt,
-// .arrow {
-//   position: relative;
-//   transform-origin: bottom center;
-//   transform: translateY(100%) scale(0.5) rotate(-30deg);
-//   animation: popUpCurve 1s ease-out forwards;
-// }
-
-// @keyframes popUpCurve {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(100%) scale(0.5) rotate(-30deg);
-//   }
-//   50% {
-//     opacity: 1;
-//     transform: translateY(-10%) scale(1) rotate(15deg);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0) scale(1) rotate(0);
-//   }
-// }
-
-// !!! ------
 
 .rotateInUpLeft {
   -webkit-animation-name: rotateInUpLeft;
