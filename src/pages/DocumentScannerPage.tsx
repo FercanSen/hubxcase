@@ -13,7 +13,9 @@ function DocumentScannerPage() {
           </p>
           <button>Learn More</button>
         </div>
-        <div className="page-content__image">image-content</div>
+        <div className="page-content__image">
+          <img className='page-content__image--document-scanner' src="src/images/DocumentScanner.png" alt="Document Scanner" />
+        </div>
       </div>
     </>
   );

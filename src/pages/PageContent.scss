@@ -2,9 +2,9 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-.page-content__image,
 .page-content__text {
   display: flex;
   justify-content: center;
@@ -46,12 +46,33 @@
 }
 
 .page-content__image {
-  background-color: lightcoral; // Optional: for visual distinction
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+
+  &--document-scanner {
+    transform: translateY(100%); // Start from below the view
+    animation: popUp 1s ease-out forwards;
+  }
 }
 
-.page-content__text {
-  background-color: lightblue; // Optional: for visual distinction
+// Define the keyframes for the pop-up animation
+@keyframes popUp {
+  to {
+    opacity: 1; // End state: fully visible
+    transform: translateY(0); // End state: no translation
+  }
 }
+
+// .page-content__image {
+//   background-color: lightcoral; // Optional: for visual distinction
+// }
+
+// .page-content__text {
+//   background-color: lightblue; // Optional: for visual distinction
+// }
 
 @media (min-width: 768px) {
   .page-content {
