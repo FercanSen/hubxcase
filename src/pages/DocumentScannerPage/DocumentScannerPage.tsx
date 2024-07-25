@@ -1,4 +1,5 @@
-import './PageContent.scss';
+import '../PageContent.scss';
+import './DocumentScannerPage.scss';
 
 function DocumentScannerPage() {
   return (
@@ -14,7 +15,11 @@ function DocumentScannerPage() {
           <button>Learn More</button>
         </div>
         <div className="page-content__image">
-          <img className='page-content__image--document-scanner' src="src/images/DocumentScanner.png" alt="Document Scanner" />
+          <img
+            className="page-content__image--document-scanner"
+            src="src/images/DocumentScanner/DocumentScanner.png"
+            alt="Document Scanner"
+          />
         </div>
       </div>
     </>

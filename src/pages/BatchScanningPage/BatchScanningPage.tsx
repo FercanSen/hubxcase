@@ -1,4 +1,4 @@
-import './PageContent.scss';
+import '../PageContent.scss';
 
 function BatchScanningPage() {
   return (

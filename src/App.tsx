@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import DocumentScannerPage from './pages/DocumentScannerPage';
-import SignAndStampPage from './pages/SignAndStampPage';
-import BatchScanningPage from './pages/BatchScanningPage';
-import AdvancedFiltersPage from './pages/AdvancedFiltersPage';
-import ExportAndSharePage from './pages/ExportAndSharePage';
+import DocumentScannerPage from './pages/DocumentScannerPage/DocumentScannerPage';
+import SignAndStampPage from './pages/SignAndStampPage/SignAndStampPage';
+import BatchScanningPage from './pages/BatchScanningPage/BatchScanningPage';
+import AdvancedFiltersPage from './pages/AdvancedFiltersPage/AdvancedFiltersPage';
+import ExportAndSharePage from './pages/ExportAndSharePage/ExportAndSharePage';
 import SliderMenu from './components/SliderMenu/SliderMenu';
 
 function App() {

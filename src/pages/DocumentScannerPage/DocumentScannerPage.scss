@@ -1,0 +1,6 @@
+@import '../animations';
+
+.page-content__image--document-scanner {
+  transform: translateY(100%);
+  animation: popUp 1s ease-out forwards;
+}
