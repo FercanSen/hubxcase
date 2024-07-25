@@ -1,0 +1,40 @@
+@import '../animations';
+
+.page-content__image--signAndStamp {
+  transform: translateY(100%);
+  animation: popUp 1s ease-out forwards;
+}
+
+.page-content__image--signAndStamp--overlay {
+  position: absolute;
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.page-content__image--signAndStamp--overlay.sign {
+  position: relative;
+  bottom: 83px;
+  right: 60px;
+  animation-delay: 1s;
+}
+
+.page-content__image--signAndStamp--overlay.stamp {
+  position: relative;
+  bottom: 155px;
+  left: 50px;
+  animation-delay: 1.25s;
+}
+
+// todo: solve the overlay changing height issue
+// // For desktop
+// @media (min-width: 768px) {
+//   .page-content__image--signAndStamp--overlay.sign {
+//     bottom: 83px;
+//     right: 60px;
+//   }
+
+//   .page-content__image--signAndStamp--overlay.stamp {
+//     bottom: 155px;
+//     left: 50px;
+//   }
+// }
